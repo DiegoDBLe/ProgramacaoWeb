@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cômodos</title>
+</head>
+<body>
+ <form action="#" th:action="@{/comodo-save/{id}(id=${comodo.id})}" th:object="${comodo}" method="POST">
+   Nome: <input type="text" th:field="*{nome}" name = "name" >
+   <br>
+   Largura: <input type="text" th:field="*{largura}" name = "largura" >
+   <br>
+   Comprimento: <input type="text" th:field="*{comprimento}" name = "comprimento" >
+   <br>
+   Altura: <input type="text" th:field="*{altura}" name = "altura" >
+   <br>
+
+   <input type="submit" name="save" value="Atuallizar cômodo"/>
+ </form>
+
+</body>
+</html>
